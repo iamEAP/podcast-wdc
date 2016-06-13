@@ -1,0 +1,96 @@
+{
+  "defaultAlias": "Podcast Episodes",
+  "description": "Episode metadata for podcasts.",
+  "id": "episodes",
+  "dependsOn": ["channels"],
+  "columns": [
+    {
+      "id": "channel",
+      "dataType": "string",
+      "alias": "Channel",
+      "description": "Name of the channel this episode belongs to.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "title",
+      "dataType": "string",
+      "alias": "Title",
+      "description": "Title of the podcast episode.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "link",
+      "dataType": "string",
+      "alias": "Link",
+      "description": "URL of the podcast episode.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "description",
+      "dataType": "string",
+      "alias": "Description",
+      "description": "Synopsis of the podcast episode.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "pubDate",
+      "dataType": "datetime",
+      "alias": "Published Date",
+      "description": "Date/time when the episode was published.",
+      "columnRole": "dimension",
+      "columnType": "continuous"
+    },
+    {
+      "id": "guid",
+      "dataType": "string",
+      "alias": "GUID",
+      "description": "A string that uniquely identifies this podcast episode.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "enclosure_url",
+      "dataType": "string",
+      "alias": "Enclosure URL",
+      "description": "Direct link to media attached to this podcast episode.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "enclosure_type",
+      "dataType": "string",
+      "alias": "Enclosure Type",
+      "description": "The type of media attached to this podcast episode.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "thumbnail",
+      "dataType": "string",
+      "alias": "Thumbnail",
+      "description": "URL to a thumbnail image representing this podcast episode.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+
+    {
+      "id": "explicit",
+      "dataType": "bool",
+      "alias": "Is Explicit",
+      "description": "Whether or not the podcast episode contains explicit content."
+    },
+    {
+      "id": "duration",
+      "dataType": "int",
+      "alias": "Duration",
+      "description": "Podcast episode duration.",
+      "columnRole": "measure",
+      "columnType": "continuous",
+      "aggType": "avg"
+    }
+  ]
+}

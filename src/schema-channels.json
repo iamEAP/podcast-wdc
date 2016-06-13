@@ -1,0 +1,55 @@
+{
+  "defaultAlias": "Podcast Channels",
+  "description": "Podcast channel metadata.",
+  "id": "channels",
+  "columns": [
+    {
+      "id": "title",
+      "dataType": "string",
+      "alias": "Title",
+      "description": "Title of the podcast.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "link",
+      "dataType": "string",
+      "alias": "Link",
+      "description": "URL of the podcast.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "description",
+      "dataType": "string",
+      "alias": "Description",
+      "description": "Description of the podcast.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "lastBuildDate",
+      "dataType": "datetime",
+      "alias": "Last Published Date",
+      "description": "Date/time when a podcast episode was published.",
+      "columnRole": "dimension",
+      "columnType": "continuous"
+    },
+    {
+      "id": "author",
+      "dataType": "string",
+      "alias": "Author",
+      "description": "Podcast episode creator.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "language",
+      "dataType": "string",
+      "alias": "Language",
+      "description": "The language/locale of the podcast.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    }
+  ]
+}
