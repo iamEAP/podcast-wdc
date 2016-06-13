@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - '0.12'
+  - '4'
 
 before_install:
   # Install grunt CLI globally so Heroku runs grunt build after install.
@@ -12,7 +12,7 @@ deploy:
   # Only deploy commits to the master branch. Be sure to update this to match
   # the actual name of your app on Heroku.
   app:
-    master: podcast-connector
+    master: podcast-wdc
 
   # In order to deploy to Heroku, we need to provide a Heroku API key. Because
   # the key is sensitive, we need to encrypt it before committing it to git. In
@@ -20,4 +20,4 @@ deploy:
   #   travis encrypt $(heroku auth:token) --add deploy.api_key
   # For more info, see: http://docs.travis-ci.com/user/deployment/heroku/
   api_key:
-    secure: 'Travis Encrypted Heroku API Key Here'
+    secure: "OsPnHkJZh4b0msCuAJkuTLzeRoUiZ4TQZOKJxGdfx6j5OhSpywdE7K+RrVu/810cDhw4NCPwba/HWXJU4eKMQxuongsZct360Ehapb6EKzhTkahOZE9gpXRKbqqbzMiUNqR28LeXzeAuxCvEb3LBPCzokIx/efHBVV0ASXjHa5tehWiWq9rFUaRb8YcAXTc8R3VvkN5RQVgE30dirPrzBdad6W3xQl2D+aOEnrrKs9X9KMy+KawKkBqv8rJ1JAKsi7AekRT+rsEewPm/lZrtvs9j5gQQl2IH22ztZQgOnBnxBj7LeNKn36KjzJ8+tJ0SZmVF9747ulJHr5XQaslkZmE3D3Q+ghCG8MnNCabq/amGS4bbcK8vE4IAYPgEBi5mk44+LBPV9kelW4bjc8CXyThfICbZTsZUmYZgxXx0E3E7CiY5xiliCvz7aA6OVB2YPtB7MDqdz5wzyOLTV0iUAVIPeX3v07mGBmXewfV3Nk08cTtQJMxFfqzhsIdbP6UT66kdwi18EzElmwJUnMpKOEMc+XbcPQ741XuJcsuHxoZI2BQnGMjyWhhDgm2TxqcVz0qvbpoaOnlw4qi1okLQ2uz+KobX1XjYbG6OENviEzZbQi1ULrkkeYLZbOTYJz6I/amVE3nEIheSJzSXrxehBYSL3dFiMOxhvTxpDOdbDwE="
